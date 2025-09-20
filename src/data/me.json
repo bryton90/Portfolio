@@ -1,0 +1,117 @@
+{
+    "firstName": "Truong",
+    "lastName": "Nguyen",
+    "role": "Fullstack Developer",
+    "avatar": "/images/me-2.png",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "experienceNum": "5+",
+    "socialLinks": [
+        {
+            "platform": "youtube",
+            "url": "https://youtube.com"
+        },
+        {
+            "platform": "facebook",
+            "url": "https://facebook.com"
+        },
+        {
+            "platform": "twitter",
+            "url": "https://twitter.com"
+        },
+        {
+            "platform": "instagram",
+            "url": "https://instagram.com"
+        },
+        {
+            "platform": "tikTok",
+            "url": "https://tiktok.com"
+        }
+    ],
+    "skills": [
+        {
+            "id": "html",
+            "name": "HTML",
+            "icon": "/icons/html.svg"
+        },
+        {
+            "id": "css",
+            "name": "CSS",
+            "icon": "/icons/css.svg"
+        },
+        {
+            "id": "js",
+            "name": "JavaScript",
+            "icon": "/icons/javascript.svg"
+        },
+        {
+            "id": "ts",
+            "name": "TypeScript",
+            "icon": "/icons/typescript.svg"
+        },
+        {
+            "id": "react",
+            "name": "React",
+            "icon": "/icons/react.svg"
+        },
+        {
+            "id": "next",
+            "name": "Next.js",
+            "icon": "/icons/next.svg"
+        },
+        {
+            "id": "angular",
+            "name": "Angular",
+            "icon": "/icons/angular.svg"
+        },
+        {
+            "id": "nest",
+            "name": "Nest.js",
+            "icon": "/icons/nest.svg"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "name": "Garden Guru",
+            "description": "An app that helps you manage and care for your plants with personalized tips and reminders.",
+            "image": "/images/plant.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Auto Ally",
+            "description": "A platform for car enthusiasts to share, review, and buy or sell vehicles.",
+            "image": "/images/car.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Phone Pal",
+            "description": "A comprehensive mobile phone management app with features like backup, tracking, and performance optimization.",
+            "image": "/images/phone.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Social Sphere",
+            "description": "A new social media network focused on connecting people with shared interests and hobbies.",
+            "image": "/images/social.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Garden Guru",
+            "description": "An app that helps you manage and care for your plants with personalized tips and reminders.",
+            "image": "/images/plant.jpg"
+        },
+        {
+            "id": "6",
+            "name": "Auto Ally",
+            "description": "A platform for car enthusiasts to share, review, and buy or sell vehicles.",
+            "image": "/images/car.jpg"
+        }
+    ],
+    "contact": {
+        "email": "sample@me.com",
+        "phone": "+84 123456789",
+        "address": "123 Sample St, Sample City, Country",
+        "linkedin": "https://linkedin.com/in/sampleprofile",
+        "github": "https://github.com/truongnguyen-dev"
+    }
+}
