@@ -9,7 +9,7 @@ const oswaldSans = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Hi, I'm Truong",
+  title: "Hi, I'm Bryton",
   description: 'Welcome to my portfolio',
 };
 
