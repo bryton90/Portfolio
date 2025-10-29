@@ -1,32 +1,11 @@
 {
-    "firstName": "Truong",
-    "lastName": "Nguyen",
-    "role": "Fullstack Developer",
-    "avatar": "/images/me-2.png",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "firstName": "Bryton",
+    "lastName": "Kilonzo",
+    "role": "Software Engineer",
+    "avatar": "/images/me.JPG",
+    "description": "Bryton is a seasoned Fullstack Developer with over 5 years of experience in building robust web applications. With expertise across the entire development stack, Bryton combines technical proficiency with a passion for creating efficient, scalable solutions. He actively shares his knowledge and engages with the developer community through various platforms, demonstrating both technical depth and a commitment to continuous learning in the ever-evolving tech landscape.",
     "experienceNum": "5+",
-    "socialLinks": [
-        {
-            "platform": "youtube",
-            "url": "https://youtube.com"
-        },
-        {
-            "platform": "facebook",
-            "url": "https://facebook.com"
-        },
-        {
-            "platform": "twitter",
-            "url": "https://twitter.com"
-        },
-        {
-            "platform": "instagram",
-            "url": "https://instagram.com"
-        },
-        {
-            "platform": "tikTok",
-            "url": "https://tiktok.com"
-        }
-    ],
+    
     "skills": [
         {
             "id": "html",
@@ -108,10 +87,10 @@
         }
     ],
     "contact": {
-        "email": "sample@me.com",
-        "phone": "+84 123456789",
-        "address": "123 Sample St, Sample City, Country",
-        "linkedin": "https://linkedin.com/in/sampleprofile",
-        "github": "https://github.com/truongnguyen-dev"
+        "email": "brytonkilonzo@gmail.com",
+        "phone": "+254 115588259",
+        "address": "Nairobi, Kenya",
+        "linkedin": "https://linkedin.com/in/bryton-kilonzo-983171170",
+        "github": "https://github.com/brytonkilonzo"
     }
 }
