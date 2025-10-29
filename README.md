@@ -1,6 +1,4 @@
-# Portfolio 1
-
-## 📖 About The Project
+# 📖 About The Project
 
 An open-source Next.js portfolio template with a minimalist and modern aesthetic. Perfect for developers and designers looking to quickly build a professional personal website.
 
