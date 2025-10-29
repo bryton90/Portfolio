@@ -121,7 +121,7 @@ export default function Home() {
       </main>
 
       {/* footer */}
-      <Footer username="Truong Nguyen" />
+      <Footer username="Bryton Kilonzo" />
     </div>
   );
 }
