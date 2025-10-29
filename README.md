@@ -5,7 +5,7 @@
 An open-source Next.js portfolio template with a minimalist and modern aesthetic. Perfect for developers and designers looking to quickly build a professional personal website.
 
 - **What problem does this project solve?** (e.g., It helps developers quickly bootstrap a professional portfolio website.)
-- **Why did you build it?** (e.g., I wanted to practice my Next.js skills and create a useful template for the community.)
+
 - **Who is the target audience?** (e.g., Developers, designers, content creators.)
 
 [Link to Live Demo](https://porfolio-1-three.vercel.app/)
