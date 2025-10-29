@@ -38,7 +38,7 @@ Follow these steps to set up and run the project locally.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/huutruong2304/porfolio-1
+    git clone https://github.com/bryton90/portfolio/
     ```
 
 2.  **Navigate to the project directory:**
@@ -92,13 +92,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 If you find this project helpful and would like to support me, consider buying me a coffee. Every contribution is greatly appreciated!
 
-<a href="https://www.buymeacoffee.com/truongnh9x" target="_blank">
+<a href="https://buymeacoffee.com/bryton" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
 </a>
 
-## 📬 Contact
-
-Truong Nguyen - NGUYỄN HỮU TRƯỜNG
 
 I'm always looking for interesting people to collaborate with and new ideas to explore. Feel free to reach out!
 <br />
