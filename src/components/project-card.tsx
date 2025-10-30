@@ -16,7 +16,7 @@ type Props = Omit<Project, 'id'>;
 const ProjectCard = ({ name, image, description, progress }: Props) => {
   return (
     <motion.div
-      className="w-full h-max flex-none bg-opacity-30 shadow rounded-lg overflow-hidden"
+      className="w-full h-max flex-none bg-opacity-30 shadow rounded-lg overflow-hidden group"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -34,7 +34,7 @@ const ProjectCard = ({ name, image, description, progress }: Props) => {
         <h5 className="text-white font-bold text-lg mb-1">{name}</h5>
         <p className="text-white text-sm mb-3 line-clamp-2">{description}</p>
         {progress !== undefined && (
-          <div className="mb-2">
+          <div className="mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="flex justify-between text-xs text-white/80 mb-1">
               <span>In Progress</span>
               <span>{progress}%</span>
