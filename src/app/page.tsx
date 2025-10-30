@@ -2,42 +2,41 @@ import Header from '@/components/layout/header';
 import Avatar from '@/components/ui/avatar';
 import SectionContent from '@/components/section-content';
 import SectionTitle from '@/components/section-title';
-import SocialLink from '@/components/ui/social-link';
-import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import SkillBoard from '@/components/skill-board';
 import Footer from '@/components/layout/footer';
+
+// Utility function to remove 'https://' from social media links for display
+const removeHttpsFromSocialLink = (url: string): string => {
+  if (!url) return '';
+  return url.replace(/^https?:\/\//, '').replace(/^www\./, '');
+};
+
 import ContactRow from '@/components/contact-row';
 import FadeInSection from '@/components/motion/fade-in-section';
 import InfoComponent from '@/components/info-component';
 import ProjectCarousel from '@/components/project-carousel';
 import MyInfo from '@/data/me.json';
-import { ProfileInfo, SocialPlatform } from '@/types';
-import { FaXTwitter } from 'react-icons/fa6';
+import { ProfileInfo } from '@/types';
+import { FiDownload, FiMail } from 'react-icons/fi';
 
 export default function Home() {
   const info: ProfileInfo = (MyInfo as ProfileInfo) || {};
 
-  const removeHttpsFromSocialLink = (link: string) => {
-    return link.replace('https://', '').replace('http://', '');
+  const handleDownloadCV = () => {
+    // Replace with your actual CV URL or file path
+    const cvUrl = '/cv.pdf';
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'BRYTON_KILONZO.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
-  const getSocialIcon = (platform: string) => {
-    const ICON_SIZE = 30;
-    switch (platform as SocialPlatform) {
-      case SocialPlatform.YOUTUBE:
-        return <FaYoutube size={ICON_SIZE} />;
-      case SocialPlatform.FACEBOOK:
-        return <FaFacebookF size={ICON_SIZE} />;
-      case SocialPlatform.TWITTER:
-        return <FaXTwitter size={ICON_SIZE} />;
-      case SocialPlatform.INSTAGRAM:
-        return <FaInstagram size={ICON_SIZE} />;
-      case SocialPlatform.TIKTOK:
-        return <FaTiktok size={ICON_SIZE} />;
-
-      default:
-        return null;
-    }
+  const handleHireMe = () => {
+  
+    window.location.href = 'mailto:brytonkilonzo@gmail.com';
   };
 
   return (
@@ -52,16 +51,45 @@ export default function Home() {
           <div className="container px-10 md:px-20 mx-auto h-full flex items-center justify-start z-10 ">
             <InfoComponent lastName={info.lastName} firstName={info.firstName} role={info.role} />
           </div>
-          {/* social link */}
-          {info?.socialLinks && (
-            <div className="absolute w-full container px-10 md:px-20 bottom-10 left-1/2 -translate-x-1/2 social-link flex gap-6 ">
-              {info.socialLinks.map((social) => (
-                <SocialLink key={social.platform} href={social.url}>
-                  {getSocialIcon(social.platform)}
-                </SocialLink>
-              ))}
-            </div>
-          )}
+          {/* Social Links */}
+          <div className="absolute w-full container px-10 md:px-20 bottom-28 left-1/2 -translate-x-1/2 flex justify-center gap-6">
+            <a 
+              href="https://github.com/bryton90" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+              aria-label="GitHub"
+            >
+              <FiGithub size={24} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/bryton-kilonzo-983171170" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FiLinkedin size={24} />
+            </a>
+          </div>
+          
+          {/* Action Buttons */}
+          <div className="absolute w-full container px-10 md:px-20 bottom-10 left-1/2 -translate-x-1/2 flex gap-6 justify-center">
+            <button
+              onClick={handleDownloadCV}
+              className="flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              <FiDownload size={20} />
+              <span>Download CV</span>
+            </button>
+            <button
+              onClick={handleHireMe}
+              className="flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors duration-300"
+            >
+              <FiMail size={20} />
+              <span>Hire Me</span>
+            </button>
+          </div>
         </section>
 
         {/* about me */}
