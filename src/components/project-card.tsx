@@ -8,11 +8,12 @@ export interface Project {
   image: string;
   name: string;
   description: string;
+  progress?: number; // 0-100
 }
 
 type Props = Omit<Project, 'id'>;
 
-const ProjectCard = ({ name, image, description }: Props) => {
+const ProjectCard = ({ name, image, description, progress }: Props) => {
   return (
     <motion.div
       className="w-full h-max flex-none bg-opacity-30 shadow rounded-lg overflow-hidden"
@@ -29,9 +30,23 @@ const ProjectCard = ({ name, image, description }: Props) => {
       </motion.div>
 
       {/* Text Content */}
-      <div className="my-4 px-2">
-        <h5 className="text-white font-bold">{name}</h5>
-        <p className="text-white line-clamp-2">{description}</p>
+      <div className="my-4 px-4">
+        <h5 className="text-white font-bold text-lg mb-1">{name}</h5>
+        <p className="text-white text-sm mb-3 line-clamp-2">{description}</p>
+        {progress !== undefined && (
+          <div className="mb-2">
+            <div className="flex justify-between text-xs text-white/80 mb-1">
+              <span>In Progress</span>
+              <span>{progress}%</span>
+            </div>
+            <div className="w-full bg-gray-700 rounded-full h-2">
+              <div 
+                className="bg-blue-500 h-2 rounded-full transition-all duration-500 ease-out"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </motion.div>
   );

@@ -76,8 +76,9 @@
         {
             "id": "5",
             "name": "CognitoHeal",
-            "description": "CognitoHeal offers an interactive platform, resource, or tool to help users—patients, therapists, or both—manage, find, or utilize therapy-related information efficiently.",
-            "image": "/images/cognitoheal.jpg"
+            "description": "An interactive platform that helps users—patients and therapists—manage and utilize therapy-related information efficiently.",
+            "image": "/images/cognitoheal.jpg",
+            "progress": 50
         },
         {
             "id": "6",
