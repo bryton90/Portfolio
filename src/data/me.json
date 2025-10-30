@@ -8,14 +8,14 @@
     
     "skills": [
         {
-            "id": "html",
-            "name": "HTML",
-            "icon": "/icons/html.svg"
+            "id": "cpp",
+            "name": "C++",
+            "icon": "/icons/cplusplus.svg"
         },
         {
-            "id": "css",
-            "name": "CSS",
-            "icon": "/icons/css.svg"
+            "id": "github",
+            "name": "GitHub",
+            "icon": "/icons/github.svg"
         },
         {
             "id": "js",
@@ -43,9 +43,9 @@
             "icon": "/icons/angular.svg"
         },
         {
-            "id": "nest",
-            "name": "Nest.js",
-            "icon": "/icons/nest.svg"
+            "id": "python",
+            "name": "Python",
+            "icon": "/icons/python.svg"
         }
     ],
     "projects": [
