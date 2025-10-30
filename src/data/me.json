@@ -82,9 +82,10 @@
         },
         {
             "id": "6",
-            "name": "Auto Ally",
-            "description": "A platform for car enthusiasts to share, review, and buy or sell vehicles.",
-            "image": "/images/car.jpg"
+            "name": "PauseQuest",
+            "description": "A productivity web app that helps users manage focus sessions and breaks with a Pomodoro timer, break prompts, and mood tracking.",
+            "image": "/images/phone.jpg",
+            "progress": 88
         }
     ],
     "contact": {
