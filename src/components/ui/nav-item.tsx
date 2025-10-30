@@ -17,7 +17,17 @@ export const NavItem = ({ title, href, selected }: Props) => {
     }
   };
   return (
-    <Link className={`px-4 py-2 ${selected ? 'text-yellow-500' : 'text-white'}`} href={href} onClick={handleClick}>
+    <Link 
+      className={`
+        whitespace-nowrap px-3 py-2 text-sm font-medium rounded-md transition-colors duration-200
+        ${selected 
+          ? 'text-yellow-500 bg-yellow-500 bg-opacity-10' 
+          : 'text-white hover:bg-white hover:bg-opacity-10'
+        }
+      `} 
+      href={href} 
+      onClick={handleClick}
+    >
       {title}
     </Link>
   );

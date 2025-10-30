@@ -37,12 +37,23 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full h-14 fixed top-0 bg-black bg-opacity-80 shadow z-10">
-      <nav className="h-full flex justify-center items-center space-x-2">
-        {nav.map((item) => (
-          <NavItem key={item.id} title={item.name} href={`#${item.id}`} selected={item.id === activeSection} />
-        ))}
-      </nav>
+    <header className="w-full fixed top-0 bg-black bg-opacity-80 shadow z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="relative flex items-center justify-between h-14">
+          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start overflow-x-auto">
+            <div className="flex space-x-1 sm:space-x-2 px-2 lg:px-0">
+              {nav.map((item) => (
+                <NavItem 
+                  key={item.id} 
+                  title={item.name} 
+                  href={`#${item.id}`} 
+                  selected={item.id === activeSection} 
+                />
+              ))}
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };
