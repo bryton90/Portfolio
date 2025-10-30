@@ -75,9 +75,9 @@
         },
         {
             "id": "5",
-            "name": "Garden Guru",
-            "description": "An app that helps you manage and care for your plants with personalized tips and reminders.",
-            "image": "/images/plant.jpg"
+            "name": "CognitoHeal",
+            "description": "CognitoHeal offers an interactive platform, resource, or tool to help users—patients, therapists, or both—manage, find, or utilize therapy-related information efficiently.",
+            "image": "/images/cognitoheal.jpg"
         },
         {
             "id": "6",
