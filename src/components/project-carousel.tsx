@@ -1,9 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import ProjectCard, { Project } from './project-card';
