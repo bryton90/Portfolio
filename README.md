@@ -6,7 +6,7 @@ An open-source Next.js portfolio template with a minimalist and modern aesthetic
 
 - **Who is the target audience?** (e.g., Developers, designers, content creators.)
 
-[Link to Live Demo](https://porfolio-1-three.vercel.app/)
+[Link to Live Demo](https://brytoncodes.vercel.app/)
 
 ## ✨ Key Features
 
