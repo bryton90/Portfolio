@@ -78,13 +78,13 @@
             "name": "CognitoHeal",
             "description": "An interactive platform that helps users—patients and therapists—manage and utilize therapy-related information efficiently.",
             "image": "/images/cognitoheal.jpg",
-            "progress": 50
+            "progress": 65
         },
         {
             "id": "6",
             "name": "PauseQuest",
             "description": "A productivity web app that helps users manage focus sessions and breaks with a Pomodoro timer, break prompts, and mood tracking.",
-            "image": "/images/phone.jpg",
+            "image": "/images/pausequest.jpg",
             "progress": 88
         }
     ],
