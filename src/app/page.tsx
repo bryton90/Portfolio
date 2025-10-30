@@ -1,3 +1,5 @@
+'use client';
+
 import Header from '@/components/layout/header';
 import Avatar from '@/components/ui/avatar';
 import SectionContent from '@/components/section-content';
@@ -24,19 +26,22 @@ export default function Home() {
   const info: ProfileInfo = (MyInfo as ProfileInfo) || {};
 
   const handleDownloadCV = () => {
-    // Replace with your actual CV URL or file path
-    const cvUrl = '/cv.pdf';
-    const link = document.createElement('a');
-    link.href = cvUrl;
-    link.download = 'BRYTON_KILONZO.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // CV file path in the public directory
+    const cvUrl = '/BRYTON KILONZO.pdf';
+    if (typeof window !== 'undefined') {
+      const link = document.createElement('a');
+      link.href = cvUrl;
+      link.download = 'BRYTON_KILONZO.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   const handleHireMe = () => {
-  
-    window.location.href = 'mailto:brytonkilonzo@gmail.com';
+    if (typeof window !== 'undefined') {
+      window.location.href = 'mailto:brytonkilonzo@gmail.com';
+    }
   };
 
   return (
@@ -52,7 +57,7 @@ export default function Home() {
             <InfoComponent lastName={info.lastName} firstName={info.firstName} role={info.role} />
           </div>
           {/* Social Links */}
-          <div className="absolute w-full container px-10 md:px-20 bottom-28 left-1/2 -translate-x-1/2 flex justify-center gap-6">
+          <div className="absolute left-10 bottom-28 flex gap-6">
             <a 
               href="https://github.com/bryton90" 
               target="_blank" 
@@ -74,17 +79,17 @@ export default function Home() {
           </div>
           
           {/* Action Buttons */}
-          <div className="absolute w-full container px-10 md:px-20 bottom-10 left-1/2 -translate-x-1/2 flex gap-6 justify-center">
+          <div className="absolute left-10 bottom-10 flex flex-col sm:flex-row gap-4">
             <button
               onClick={handleDownloadCV}
-              className="flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-full sm:w-auto"
             >
               <FiDownload size={20} />
               <span>Download CV</span>
             </button>
             <button
               onClick={handleHireMe}
-              className="flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors duration-300"
+              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors duration-300 w-full sm:w-auto"
             >
               <FiMail size={20} />
               <span>Hire Me</span>
