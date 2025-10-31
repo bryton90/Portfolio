@@ -56,44 +56,47 @@ export default function Home() {
           <div className="container px-10 md:px-20 mx-auto h-full flex items-center justify-start z-10 ">
             <InfoComponent lastName={info.lastName} firstName={info.firstName} role={info.role} />
           </div>
-          {/* Social Links */}
-          <div className="absolute left-10 bottom-28 flex gap-6">
-            <a 
-              href="https://github.com/bryton90" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
-              aria-label="GitHub"
-            >
-              <FiGithub size={24} />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/bryton-kilonzo-983171170" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <FiLinkedin size={24} />
-            </a>
-          </div>
-          
-          {/* Action Buttons */}
-          <div className="absolute left-10 bottom-10 flex flex-col sm:flex-row gap-4">
-            <button
-              onClick={handleDownloadCV}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-full sm:w-auto"
-            >
-              <FiDownload size={20} />
-              <span>Download CV</span>
-            </button>
-            <button
-              onClick={handleHireMe}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors duration-300 w-full sm:w-auto"
-            >
-              <FiMail size={20} />
-              <span>Hire Me</span>
-            </button>
+          {/* Social Links and Action Buttons Container */}
+          <div className="absolute bottom-10 left-4 sm:left-10 right-4 sm:right-auto flex flex-col-reverse sm:flex-row sm:items-end gap-6">
+            {/* Social Links - Vertical on left */}
+            <div className="flex sm:flex-col gap-4 sm:gap-3">
+              <a 
+                href="https://github.com/bryton90" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-300 transition-colors"
+                aria-label="GitHub"
+              >
+                <FiGithub size={24} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/bryton-kilonzo-983171170" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-300 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <FiLinkedin size={24} />
+              </a>
+            </div>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
+              <button
+                onClick={handleDownloadCV}
+                className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-full sm:w-auto"
+              >
+                <FiDownload size={20} />
+                <span className="text-sm sm:text-base">Download CV</span>
+              </button>
+              <button
+                onClick={handleHireMe}
+                className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-white text-black rounded-full hover:bg-gray-100 transition-colors duration-300 w-full sm:w-auto"
+              >
+                <FiMail size={20} />
+                <span className="text-sm sm:text-base">Hire Me</span>
+              </button>
+            </div>
           </div>
         </section>
 
