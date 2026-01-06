@@ -11,9 +11,20 @@ type Props = {
 export const NavItem = ({ title, href, selected }: Props) => {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const target = document.querySelector(href);
+    const targetId = href.replace('#', '');
+    const target = document.getElementById(targetId);
+    console.log('Attempting to scroll to:', targetId, 'Found element:', target);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 56; // Approximate header height (h-14 = 56px)
+      const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.error('Element not found:', targetId);
     }
   };
   return (
