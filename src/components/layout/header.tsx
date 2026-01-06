@@ -8,7 +8,7 @@ const nav: {
   { id: 'home', name: 'Home' },
   { id: 'about', name: 'About' },
   { id: 'skills', name: 'Skills' },
-  { id: 'projects', name: 'Projects' },
+  { id: 'project', name: 'Projects' },
   { id: 'contact', name: 'Contact' },
 ];
 
