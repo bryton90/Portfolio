@@ -133,7 +133,7 @@ export default function Home() {
         <section id="project" className="h-[800px] bg-black px-10 md:px-20">
           <SectionContent className="h-full  flex-col justify-center">
             <FadeInSection>
-              <SectionTitle>Project</SectionTitle>
+              <SectionTitle>Projects</SectionTitle>
             </FadeInSection>
             <FadeInSection>
               <div className="w-full h-96 flex overflow-auto gap-6">
